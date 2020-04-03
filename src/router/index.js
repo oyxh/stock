@@ -23,16 +23,11 @@ const router = new Router({
       name: 'index',
       component: Index,
       children: [// 二级路由
-        /* {
-          path: '/map',
-          name: 'map',
-          component: () => import('../components/index/map/MapWindow.vue')
-        },
         {
-          path: '/statis',
-          name: 'statis',
-          component: () => import('../components/index/statis/StatisWindow.vue')
-        } */
+          path: '/manager',
+          name: 'manager',
+          component: () => import('../components/index/manager/StockCode.vue')
+        }
       ]
     }
   ]
